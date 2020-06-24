@@ -1,0 +1,23 @@
+{
+  "name": "cy-itau",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "cypress-cucumber-preprocessor": "^2.5.0"
+  },
+  "devDependencies": {
+    "cypress": "^4.9.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cypress:runAll": "cypress run --browser chrome --record --key 86c7da68-6934-407b-b3d4-3a9541317c45",
+    "cypress:open": "cypress open"
+  },
+  "cypress-cucumber-preprocessor": {
+    "step_definitions": "cypress/support/steps"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
