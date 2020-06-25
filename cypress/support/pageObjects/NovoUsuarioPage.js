@@ -1,7 +1,7 @@
 /// <reference types="Cypress" />
-import GenericosSteps from '../pageObjects/GenericosSteps';
+import GenericosPage from '../pageObjects/GenericosPage';
 import NovoUsuarioElements from '../elements/NovoUsuarioElements';
-const nav = new GenericosSteps;
+const nav = new GenericosPage;
 const elemento = new NovoUsuarioElements;
 const url = Cypress.config("baseUrl1");
 

@@ -1,7 +1,7 @@
 /// <reference types="Cypress" />
 const url = Cypress.config("baseUrl");
 
-class GerericosSteps {
+class GenericosPage {
     // Acessa o site que será testado
     acessarSite() {
         cy.visit(url);
@@ -53,6 +53,10 @@ class GerericosSteps {
         cy.get(elemento).should('have.text', Esperado)
     }
 
+    validarMsgTela(msg) {
+        cy.contains(msg).should('have.text', msg)
+    }
+
 }
 
-export default GerericosSteps;
+export default GenericosPage;

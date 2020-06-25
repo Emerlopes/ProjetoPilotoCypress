@@ -6,9 +6,9 @@ Feature: Login usuario
     @LoginUsuario
     Scenario Outline: Verificar acesso de usuario
         When informo os dados para login <email> e <senha>
-        And clico no botao "entrar"
+        And clico em "Entrar"
         Then devo visualizar a mensagem <msg>
 
         Examples:
-            | nome    | email              | senha | msg                            |
-            | Geraldo | aprender10@tst.com | 123   | Endereço de email já utilizado |
+            | nome    | email              | senha | msg                    |
+            | Geraldo | aprender10@tst.com | 123   | Bem vindo, Geraldo!    |
