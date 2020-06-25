@@ -28,8 +28,9 @@ class NovoUsuarioPage {
     }
 
     // Clica no botão cadastrar
-    clicarCadastrar() {
-        nav.clicar(elemento.btnCadastrar());
+    clicarCadastrar(botao) {
+        nav.clicarPorTexto(botao)
+        //nav.clicar(elemento.btnCadastrar());
     }
 
     // Valida mensagem

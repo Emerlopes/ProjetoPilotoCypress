@@ -36,6 +36,11 @@ class GerericosSteps {
         cy.get(elemento).should('exist').click();
     }
 
+    // Recuperar o elemento por nome e clica
+    clicarPorTexto(texto) {
+        cy.contains(texto.replace(/"/g, '')).click();
+    }
+
     //#####################################
     //             VALIDAÇÕES
     //#####################################

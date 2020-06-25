@@ -19,8 +19,8 @@ When("informo os dados para cadastro {}, {} e {}", (nome, email, senha) => {
     page.digitarSenha(senha);
 })
 
-And("clico no botao cadastrar", () => {
-    page.clicarCadastrar();
+And("clico no botao {}", (botao) => {
+    page.clicarCadastrar(botao);
 })
 
 And("devo visualizar a mensagem {}", (msg) => {

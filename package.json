@@ -11,10 +11,10 @@
   },
   "scripts": {
     "cypress:open": "cypress open",
-    "run:ondash": "cypress run --record --key 86c7da68-6934-407b-b3d4-3a9541317c45",
-    "run:offBroser": "cypress run",
-    "run:onBrowser": "cypress run --browser chrome",
-    "run:tag": "cypress-tags run -e TAGS=@CadastrarUsuario",
+    "test:ondash": "cypress run --record --key 86c7da68-6934-407b-b3d4-3a9541317c45",
+    "test:offBroser": "cypress run",
+    "test:onBrowser": "cypress run --browser chrome",
+    "test:tag": "cypress-tags run -e TAGS=@CadastrarUsuario --browser chrome --no-exit",
     
     "test:novoUsuario": "cypress-tags run -e TAGS=@teste --browser chrome --no-exit",
     "testCadastrarUsuario": "cypress-tags run -e TAGS=@teste"
