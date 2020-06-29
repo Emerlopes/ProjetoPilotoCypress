@@ -4,7 +4,8 @@ import GenericosPage from '../pageObjects/GenericosPage';
 const page = new GenericosPage;
 
 Given("acesso o site", () => {
-    page.acessarSite();
+    cy.acessarSite();
+    //page.acessarSite();
 })
 
 And("clico em {}", (texto) => {

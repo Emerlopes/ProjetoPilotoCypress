@@ -1,0 +1,10 @@
+{
+    "tipo_da_movimentacao": "Despesa",
+    "data_movimentacao": "29/06/2020",
+    "data_pagamento": "29/06/2020",
+    "descricao": "AUTOMACAO COM CYPRESS",
+    "interessado": "CAMILA",
+    "valor": "30000",
+    "conta": "Segmento 1",
+    "situacao": "Pago"
+}

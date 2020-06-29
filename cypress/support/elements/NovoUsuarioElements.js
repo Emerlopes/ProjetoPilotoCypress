@@ -1,5 +1,4 @@
 class NovoUsuarioElements {
-
         // Clica no link novo usuario
         linkNovoUsuario = () => { return ':nth-child(2) > a' };
 
@@ -17,7 +16,6 @@ class NovoUsuarioElements {
 
         // Mensagem
         alerta = () => { return '.alert' };
-
 }
 
 export default NovoUsuarioElements;

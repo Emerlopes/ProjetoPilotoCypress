@@ -23,3 +23,20 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite("visit", (originalFn, url, options) => { ... })
+
+Cypress.Commands.add('acessarSite', (elemento, texto)=>{
+    const url = Cypress.config("baseUrl");
+    cy.visit(url);
+})
+
+Cypress.Commands.add('digitarCampoTexto', (elemento, texto)=>{
+    cy.get(elemento).should('exist').focus().type(texto).should('have.value', texto);
+})
+
+Cypress.Commands.add('selecionarValorLista', (elemento, valor)=>{
+    cy.get(elemento).should('exist').focus().select(valor);
+})
+
+Cypress.Commands.add('selecionarValorRadion', (elemento)=>{
+    cy.get(elemento).should('exist').focus().click();
+})

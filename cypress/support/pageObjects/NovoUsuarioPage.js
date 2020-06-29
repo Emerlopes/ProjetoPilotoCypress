@@ -9,34 +9,34 @@ class NovoUsuarioPage {
 
     // Clica no link Novo Usuário
     clicarNovoUsuario() {
-        nav.clicar(elemento.linkNovoUsuario());
+        cy.clicar(elemento.linkNovoUsuario());
     }
 
     // Preenche o nome
     digitarNome(nome) {
-        nav.digitarCampoTexto(elemento.inputNome(), nome);
+        cy.digitarCampoTexto(elemento.inputNome(), nome);
     }
 
     // Preenche o email
     digitarEmail(email) {
-        nav.digitarCampoTexto(elemento.inputEmail(), email);
+        cy.digitarCampoTexto(elemento.inputEmail(), email);
     }
 
     // Preenche a senha
     digitarSenha(senha) {
-        nav.digitarCampoTexto(elemento.inputSenha(), senha);
+        cy.digitarCampoTexto(elemento.inputSenha(), senha);
     }
 
     // Clica no botão cadastrar
     clicarCadastrar(botao) {
-        nav.clicarPorTexto(botao)
+        cy.clicarPorTexto(botao)
         //nav.clicar(elemento.btnCadastrar());
     }
 
     // Valida mensagem
     validarMensagem(msg) {
-        nav.validarTextoTela(msg, elemento.alerta());
-        nav.print("Mensagem")
+        cy.validarTextoTela(msg, elemento.alerta());
+        cy.print("Mensagem")
     }
 
 }

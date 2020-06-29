@@ -2,10 +2,8 @@
 const url = Cypress.config("baseUrl");
 
 class GenericosPage {
-    // Acessa o site que será testado
-    acessarSite() {
-        cy.visit(url);
-    }
+
+
 
     // Pausa a execução do código em um ponto determinado
     interromper() {
@@ -22,28 +20,19 @@ class GenericosPage {
         cy.screenshot(msg);
     }
 
-    //#####################################
     //          AÇÕES DO NAVEGADOR
-    //#####################################
 
-    // Recuperar o elemento input texto
-    digitarCampoTexto(elemento, texto) {
-        cy.get(elemento).should('exist').focus().type(texto).should('have.value', texto);
-    }
-
-    // Recuperar o elemento e realiza um click
+    // Recupera o elemento e clica
     clicar(elemento) {
         cy.get(elemento).should('exist').click();
     }
 
-    // Recuperar o elemento por nome e clica
+    // Recuper o elemento por nome e clica
     clicarPorTexto(texto) {
         cy.contains(texto.replace(/"/g, '')).click();
     }
 
-    //#####################################
     //             VALIDAÇÕES
-    //#####################################
 
     validarTextoCampo(Esperado, elemento) {
         cy.get(elemento).should('have.value', Esperado)

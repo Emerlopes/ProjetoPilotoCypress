@@ -12,3 +12,4 @@ Feature: Login usuario
         Examples:
             | nome    | email              | senha | msg                    |
             | Geraldo | aprender10@tst.com | 123   | Bem vindo, Geraldo!    |
+            | Geraldo | aprender10@tst.com | 456   | Problemas com o login do usuário    |

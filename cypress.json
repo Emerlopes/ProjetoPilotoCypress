@@ -3,5 +3,6 @@
   "viewportHeight": 768,
   "defaultCommandTimeout": 10000,
   "baseUrl": "https://srbarriga.herokuapp.com/login",
-  "projectId": "meojma"
+  "projectId": "meojma",
+  "contacriada": ""
 }
