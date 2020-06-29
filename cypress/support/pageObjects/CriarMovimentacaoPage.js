@@ -47,6 +47,7 @@ class CriarMovimentacaoPage {
                 break;
             default:
         }
+        nav.print();
     }
 }
 

@@ -14,8 +14,8 @@
     "test:ondash": "cypress run --record --key 86c7da68-6934-407b-b3d4-3a9541317c45",
     "test:offBrowser": "cypress run",
     "test:onBrowser": "cypress run --browser chrome",
-    "test:tag": "cypress-tags run -e TAGS=@LoginUsuario --browser chrome --no-exit",
-    
+    "test:ontag": "cypress-tags run -e TAGS=@CriarMovimento --browser chrome --no-exit",
+    "test:offtag": "cypress-tags run -e TAGS=@CriarMovimento",
     "test:novoUsuario": "cypress-tags run -e TAGS=@teste --browser chrome --no-exit",
     "testCadastrarUsuario": "cypress-tags run -e TAGS=@teste"
   },

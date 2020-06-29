@@ -8,7 +8,7 @@ And("informo a massa de teste no formato {}", function (json) {
     arquivo = json;
 })
 
-And("informo os dados para criar uma movimentacao, {}", function () {
+And("informo os dados para criar uma movimentacao", function () {
     cy.fixture(arquivo).as("mov").then(() => {
         page.digitarDataMovimentacao(this.mov.data_movimentacao);
         page.digitarDataPagamento(this.mov.data_pagamento);

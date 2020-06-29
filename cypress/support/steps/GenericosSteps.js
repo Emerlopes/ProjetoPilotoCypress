@@ -5,7 +5,6 @@ const page = new GenericosPage;
 
 Given("acesso o site", () => {
     cy.acessarSite();
-    //page.acessarSite();
 })
 
 And("clico em {}", (texto) => {
